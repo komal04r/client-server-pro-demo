@@ -2,9 +2,6 @@
 
 A comprehensive full-stack CRUD application demonstrating modern client-server architecture with advanced features like search, sorting, pagination, optimistic concurrency control, bulk operations, and real-time statistics. Built with vanilla JavaScript and Node.js without external dependencies, showcasing professional web development practices.
 
-![Client-Server Pro Demo](https://via.placeholder.com/800x400/2563eb/ffffff?text=Client-Server+Pro+Demo)
-
-![Books Management Interface](https://via.placeholder.com/800x400/16a34a/ffffff?text=Books+Management+Interface)
 
 ## 🚀 Features
 
