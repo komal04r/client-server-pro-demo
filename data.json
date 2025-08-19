@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": "b1",
+      "title": "Clean Architecture",
+      "author": "Robert C. Martin",
+      "year": 2017,
+      "rating": 4.6,
+      "tags": [
+        "architecture"
+      ],
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2020-01-01T00:00:00.000Z",
+      "version": 1
+    },
+    {
+      "id": "b2",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "year": 2017,
+      "rating": 4.8,
+      "tags": [
+        "data",
+        "systems"
+      ],
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2020-01-01T00:00:00.000Z",
+      "version": 1
+    },
+    {
+      "id": "b3",
+      "title": "You Don't Know JS Yet",
+      "author": "Kyle Simpson",
+      "year": 2020,
+      "rating": 5,
+      "tags": [
+        "javascript"
+      ],
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2025-08-19T15:46:45.030Z",
+      "version": 2
+    },
+    {
+      "id": "test",
+      "title": "test",
+      "author": "test",
+      "year": 1977,
+      "rating": 5,
+      "tags": [
+        "test"
+      ],
+      "createdAt": "2025-08-19T15:45:32.461Z",
+      "updatedAt": "2025-08-19T15:46:37.167Z",
+      "version": 4
+    },
+    {
+      "id": "13",
+      "title": "test book",
+      "author": "test author",
+      "year": 2016,
+      "rating": 4.2,
+      "tags": [
+        "java"
+      ],
+      "createdAt": "2025-08-19T15:59:57.597Z",
+      "updatedAt": "2025-08-19T15:59:57.597Z",
+      "version": 1
+    }
+  ]
+}

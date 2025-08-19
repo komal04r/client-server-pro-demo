@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client–Server Pro Demo (Books)</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="container">
+    <div class="header-row">
+        <h1>📚 Client–Server Pro Demo</h1>
+        <div class="header-actions">
+            <button id="theme-toggle" class="secondary" title="Toggle theme">🌓 Theme</button>
+            <button id="export-btn" class="secondary" title="Export JSON">⬇️ Export</button>
+            <label class="import-label">
+                ⬆️ Import
+                <input id="import-input" type="file" accept="application/json" hidden />
+            </label>
+        </div>
+    </div>
+    <p class="muted">Full CRUD with search, sorting, pagination, stats, bulk import/export, optimistic concurrency.</p>
+    <div id="health" class="health">Health: —</div>
+    <div id="stats" class="stats card"></div>
+</header>
+
+<main class="container grid">
+    <section class="card">
+        <h2>Add / Update a Book</h2>
+        <form id="book-form">
+            <div class="row">
+                <label for="id">ID</label>
+                <input id="id" placeholder="Leave empty to auto-generate" />
+            </div>
+            <div class="row">
+                <label for="title">Title*</label>
+                <input id="title" required placeholder="e.g., The Pragmatic Programmer" />
+            </div>
+            <div class="row">
+                <label for="author">Author</label>
+                <input id="author" placeholder="e.g., Andy Hunt, Dave Thomas" />
+            </div>
+            <div class="row">
+                <label for="year">Year</label>
+                <input id="year" type="number" placeholder="e.g., 1999" />
+            </div>
+            <div class="row">
+                <label for="rating">Rating</label>
+                <input id="rating" type="number" step="0.1" min="0" max="5" placeholder="e.g., 4.7" />
+            </div>
+            <div class="row">
+                <label for="tags">Tags</label>
+                <input id="tags" placeholder="comma,separated,tags" />
+            </div>
+            <input id="version" type="hidden" />
+            <div class="actions">
+                <button type="submit" id="create-btn">Create</button>
+                <button type="button" id="update-btn" class="secondary">Update</button>
+                <button type="reset" class="ghost">Clear</button>
+            </div>
+            <p id="form-msg" class="muted"></p>
+        </form>
+    </section>
+
+    <section class="card">
+        <div class="list-header">
+            <h2>Books</h2>
+            <div class="search">
+                <input id="search" placeholder="Search id/title/author/tags..." />
+                <select id="page-size">
+                    <option value="10">10 / page</option>
+                    <option value="20" selected>20 / page</option>
+                    <option value="50">50 / page</option>
+                </select>
+                <button id="refresh-btn" class="secondary">Refresh</button>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table id="books-table">
+                <thead>
+                <tr>
+                    <th data-sort="id">ID</th>
+                    <th data-sort="title">Title</th>
+                    <th data-sort="author">Author</th>
+                    <th data-sort="year">Year</th>
+                    <th data-sort="rating">Rating</th>
+                    <th>Tags</th>
+                    <th data-sort="updatedAt">Updated</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button id="prev-page" class="secondary">Prev</button>
+            <span id="page-info" class="muted">Page —</span>
+            <button id="next-page" class="secondary">Next</button>
+        </div>
+    </section>
+</main>
+
+<footer class="container">
+    <small class="muted">Open multiple tabs to simulate multiple clients sharing one server.</small>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js" type="module"></script>
+</body>
+</html>
