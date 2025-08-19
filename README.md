@@ -159,11 +159,10 @@ Books support the following fields:
 
 ## 📊 Screenshots
 
-*Main Interface*
-![Screenshot 2025-08-19 at 9 33 08 AM](https://via.placeholder.com/800x500/2563eb/ffffff?text=Books+CRUD+Interface)
+<img width="2906" height="1550" alt="Screenshot 2025-08-19 at 3 16 09 PM" src="https://github.com/user-attachments/assets/9bfaccc4-90fb-4ace-859c-348c029bc65d" />
 
-*Dark Theme & Statistics*
-![Screenshot 2025-08-19 at 9 33 18 AM](https://via.placeholder.com/800x500/16a34a/ffffff?text=Dark+Theme+%26+Analytics)
+<img width="2980" height="1686" alt="Screenshot 2025-08-19 at 3 18 42 PM" src="https://github.com/user-attachments/assets/5cff7309-9908-4190-a73d-ad9560692c4f" />
+
 
 ## 🔮 Future Enhancements
 
